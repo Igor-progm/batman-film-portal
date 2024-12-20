@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 150px; 
+    height: 100%;
+    max-width: 100%;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+.banner {
+    background-image: url('./src/img/banner.webp');
+    background-position: 50% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#trailer {
+    width: 50%;
+}
+
+.sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+#description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+#button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;  
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    outline: none;
+    margin-top: 25px;
+}
+
+#button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url('https://img.odcdn.com.br/cdn-cgi/image/width=960,height=1200,fit=cover/wp-content/uploads/2022/01/The-Batman.jpg');
+}
+
+.banner-2{
+    background-image: url('https://rollingstone.com.br/media/uploads/zoe_kravitz_divulgacao.jpg');
+}
+
+.banner-3{
+    background-image: url('https://www.looper.com/img/gallery/the-best-gordon-scene-in-the-batman-according-to-fans/intro-1646591550.jpg');
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, p, label {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    background-color: transparent;
+}
+
+.label{
+    color: #000;
+}
+
+#titulo-contato{
+    color: #000;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+}
+
+textarea{
+    height: 60px;
+}
+
+
+.contato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contato-info {
+    text-align: center;
+    width: 60%;
+}
+
+.contato-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.canais-de-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn{
+    background-color: #000;
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    height: 40px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.secao-galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 30px;
+    margin: 50px 100px;
+}
+
+.secao-galeria img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.secao-galeria img:hover{
+    transform: scale(1.1);
+}
+
+.main-comentarios-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 100px;
+}
+
+.comentario-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 50px;    
+}
+
+.card-comentario{
+    margin-top: 50px;
+    height: 360px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+
+.card-comentario .avaliacao {
+    width: 100px;   
+    height: auto;
+}
+
+.div-usuario .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.div-usuario{
+    display: flex;
+    margin-top: 20px;
+}
+
+.div-usuario span{
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
